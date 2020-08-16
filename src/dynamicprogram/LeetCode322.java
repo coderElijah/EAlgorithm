@@ -31,7 +31,7 @@ public class LeetCode322 {
                 }
             }
         }
-        return dp[amount];
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 
 }
